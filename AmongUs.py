@@ -6,13 +6,13 @@ from PIL import Image, ImageFont, ImageDraw
 from textwrap import wrap
 
 class AmongUsMod(loader.Module):
-	"""Символ пмздабольства 2020"""
-	strings = {
-		"name": "Among Us"
-	}
+    """Символ пмздабольства 2020"""
+    strings = {
+        "name": "Among Us"
+    }
 
-	async def client_ready(self, client, db):
-		self.client = client
+    async def client_ready(self, client, db):
+        self.client = client
 
     
     @loader.owner
