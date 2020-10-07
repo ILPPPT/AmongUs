@@ -17,7 +17,7 @@ class AmongUsMod(loader.Module):
     
     @loader.owner
     async def sayliecmd(self, message):
-        clrs = {'red': 1, 'lime': 2, 'green': 3, 'blue': 4, 'cyan': 5, 'brown': 6, 'purple': 7, 'pink': 8, 'orange': 9, 'yellow': 10, 'white': 11, 'black': 12, 'kirill': 13}
+        clrs = {'red': 1, 'lime': 2, 'green': 3, 'blue': 4, 'cyan': 5, 'brown': 6, 'purple': 7, 'pink': 8, 'orange': 9, 'yellow': 10, 'white': 11, 'black': 12, 'kirill': 13, 'gus': 14}
         """текст или реплай"""
         clr = randint(1,12)
         text = utils.get_args_raw(message)
