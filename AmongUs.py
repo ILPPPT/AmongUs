@@ -5,14 +5,14 @@ from random import randint, choice
 from PIL import Image, ImageFont, ImageDraw
 from textwrap import wrap
 
-class ILPPPTMod(loader.Module):
-    """Символ ILPPPT"""
-    strings = {
-        "name": "ILPPPT"
-    }
+class AmongUsMod(loader.Module):
+	"""Символ пмздабольства 2020"""
+	strings = {
+		"name": "Among Us"
+	}
 
-    async def client_ready(self, client, db):
-        self.client = client
+	async def client_ready(self, client, db):
+		self.client = client
 
     
     @loader.owner
@@ -56,7 +56,7 @@ class ILPPPTMod(loader.Module):
         image.paste(text, (w-text.width, 0), text)
         image.thumbnail((512, 512))
         output = BytesIO()
-        output.name = "ILPPPT.webp"
+        output.name = "imposter.webp"
         image.save(output)
         output.seek(0)
         await message.delete()
